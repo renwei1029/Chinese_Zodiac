@@ -13,8 +13,8 @@ contract NicMeta is ERC721Enumerable, Ownable {
     bool public _revealed = false;
 
     // Constants
-    uint256 public constant MAX_SUPPLY = 10000;
-    uint256 public mintPrice = 88888 ether;
+    uint256 public constant MAX_SUPPLY = 12000;
+    uint256 public mintPrice = 99999 ether;
     uint256 public maxBalance = 1;
     uint256 public maxMint = 1;
 
@@ -25,7 +25,7 @@ contract NicMeta is ERC721Enumerable, Ownable {
     mapping(uint256 => string) private _tokenURIs;
 
     constructor(string memory initBaseURI, string memory initNotRevealedUri)
-        ERC721("ATOSHI 3rd Anniversary Coin", "AC")
+        ERC721("Chinese Zodiac", "CZ")
     {
         setBaseURI(initBaseURI);
         setNotRevealedURI(initNotRevealedUri);
